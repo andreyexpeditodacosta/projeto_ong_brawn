@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Superlicença</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logomarca"><img src="#" alt="#"></div>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projeto e afins</a></li>
+                <li><a href="cadastro.html">cadastros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="principal">
+        <h1>Vamos fazer a sua superlicença</h1>
+        <p>
+            <pre>
+                Bem-vindo(a) ao seu cadastro, aqui, iremos fazer
+                a sua superlicença para ser voluntário, preencha
+                todos os campos como requerido.
+            </pre>
+        </p>
+        <p>
+            <pre>
+                Agora, vista seu macação e luvas, coloque seu
+                capacete, e acelere com a gente para um futuro
+                campeão.
+            </pre>
+        </p>
+    </section>
+    <form id= "voluntariado"onsubmit="handleSubmit(event)">
+        <fieldset>
+            <legend>Superlicença</legend>
+            <div class="campos">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campos">
+                <label for="email">Endereço de E-mail.</label>
+                <input type="text" id="email" name="email" placeholder="brawngpsr_ong@gmail.com" required>
+            </div>
+            <div class="campos">
+                <label for="cnh">CNH (Carteira Nacinal de habilitação).</label>
+                <input type="text" id="cnh" name="cnh" placeholder="000000000" required>
+            </div>
+            <div class="campos">
+                <label for="cpf">CPF.</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+            </div>
+            <div class="campos">
+                <label for="datan">Data de nascimento</label>
+                <input type="text" id="datan" name="data_de_nascimento" placeholder="00/00/0000" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Disponibilidade</legend>
+            <div class="campos">
+                <label for="disponibilidade">Quando está disponível?</label>
+                <select name="disponibilidade" id="disponibilidade">
+                    <option value="">Selecione</option>
+                    <option value="fins_de_semana">Fins de semana</option>
+                    <option value="dias_uteis">Dias úteis</option>
+                    <option value="flexivel">Horário flexivel</option>
+                    <option value="pontual">Eventos pontuais</option>
+                </select>
+            </div>
+            <div class="campos">
+                <legend>Área de Interesse</legend>
+                <label for="Interesse">Qual a sua área de Interesse?</label>
+                <select name="Interesse" id="Interesse">
+                    <option value="Alimentos">Distribuição de Alimentos</option>
+                    <option value="educador">educador</option>
+                    <option value="saude">Saúde física e mental</option>
+                    <option value="administrativo">Apoio administrativo</option>
+                    <option value="outros">Outras áreas</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            
+        </fieldset>
+    </form>
+    <footer>
+        <p>            
+            Site pensado e desenvolvido por:
+            Andrey Expedito da Costa (Cypher)©
+        </p>
+    </footer>
+</body>
+</html>
