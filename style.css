@@ -1,17 +1,21 @@
+/*Configurações geral da estrutura visual do site.*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
 }
+/*Configurações de corpo (Auterar font e background).*/
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: black;
 }
+/*Aumentar o cabeçalho e suas tags decendentes.*/
 header{
     background-color: white;
 }
+/*Navegação e filhos*/
 nav{
     max-width: 1200px;
     display: flex;
@@ -32,9 +36,11 @@ nav a{
     opacity: 0.8;
     text-decoration: none;
 }
+/*Imagem da logo no cabeçalho.*/
 #logomarca{
     width: 200px;
 }
+/*Configurações de cabecalhos e conteúdos (Auterar tamando e família da fonte).*/
 .principal > h1{
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
@@ -54,6 +60,7 @@ nav a{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+/*Configurações do rodapé (Adcionar um hover depois).*/
 footer{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
