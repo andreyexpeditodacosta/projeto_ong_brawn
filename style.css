@@ -1,3 +1,21 @@
+:root{
+    --cor_especia1: #cbcf0c;
+    --cor_especial2: #282221;
+    --cor_especial3: #e6e6e6;
+    --cor_de_fundo: #fff;
+    --cor_de_fundo_dark: #000;
+    --cor_de_fonte: #000;
+    --cor_de_fonte_dark: #fff;
+    --bg_section: #fff;
+    --bg_section_dark: #000;
+    --bg_sombra: hsla(0, 0%, 0%, 0.404);
+    --tamanho_fonte_titulo: 20px;
+    --tamanho_font_texto: 16px;
+    --tamanho_font_aside: 10px;
+
+}
+
+
 /*Configurações geral da estrutura visual do site.*/
 *{
     padding: 0;
@@ -8,37 +26,52 @@
 /*Configurações de corpo (Auterar font e background).*/
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: black;
+    font-size: var(--tamanho_font_texto);
+    color: var(--cor_de_fonte);
+    background-color: var(--cor_de_fundo);
+    display: grid;
 }
 /*Aumentar o cabeçalho e suas tags decendentes.*/
 header{
-    background-color: white;
+    width: 100%;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--bg_sombra);
+    background-color: var(--cor_especia1);
 }
 /*Navegação e filhos*/
 nav{
     max-width: 1200px;
     display: flex;
+    margin: 0;
     justify-content: space-between;
     align-items: center;
+    padding: 0.2rem;
 }
 nav ul{
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 2.0rem;
+}
+nav a{
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 500;
 }
 nav a:hover,
 nav a.active {
     opacity: 1;
     font-weight: bold;
 }
-nav a{
-    opacity: 0.8;
-    text-decoration: none;
-}
 /*Imagem da logo no cabeçalho.*/
-#logomarca{
+picture > #logo{
     width: 200px;
+}
+section{
+    position: relative;
+    top: 100px;
 }
 /*Configurações de cabecalhos e conteúdos (Auterar tamando e família da fonte).*/
 .principal > h1{
@@ -46,7 +79,7 @@ nav a{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
 }
-.principal > pre{
+.principal > p >pre{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -55,10 +88,14 @@ nav a{
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
 }
-.secundario > pre{
+.secundario > P > pre{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+form{
+    position: relative;
+    top: 85px;
 }
 /*Configurações do rodapé (Adcionar um hover depois).*/
 footer{
@@ -66,4 +103,6 @@ footer{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     text-decoration: none;
+    position: relative;
+    top: 100px;
 }

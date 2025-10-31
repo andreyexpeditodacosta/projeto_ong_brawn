@@ -8,13 +8,23 @@
 </head>
 <body>
     <header>
+        <!--Navegação-->
         <nav>
-            <div id="logomarca"><img src="#" alt="#"></div>
+            <picture>
+                <source media="(min-width: 1000px)" srcset="imagens/logotipo/940px_bgp.png">
+                <source media="(min-width: 500px)" srcset="imagens/logotipo/470px_bgp.png">
+                <source media="(min-width: 300px)" srcset="imagens/logotipo/235px_bgp.png">
+                <img id="logo" src="imagens/logotipo/118px_bgp.png" alt="Logo da BrawnGP">
+            </picture>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="projetos.html">Projeto e afins</a></li>
                 <li><a href="cadastro.html">cadastros</a></li>
             </ul>
+            <div class="controles">
+                <button class="dark-mode-button" aria-label="modo-escuro"><span>☀️</span></button>
+                <button class="toggle" aria-label="toggle"><span>|||</span></button>
+            </div>
         </nav>
     </header>
     <!--Superlicença = dados cadastrais. Uma brincadeira com o tema do automobilismo-->

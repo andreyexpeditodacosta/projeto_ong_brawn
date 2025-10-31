@@ -11,35 +11,48 @@
     <header>
         <!--Navegação-->
         <nav>
-            <div id="logomarca"><img src="#" alt="#"></div>
+            <picture>
+                <source media="(min-width: 1000px)" srcset="imagens/logotipo/940px_bgp.png">
+                <source media="(min-width: 500px)" srcset="imagens/logotipo/470px_bgp.png">
+                <source media="(min-width: 300px)" srcset="imagens/logotipo/235px_bgp.png">
+                <img id="logo" src="imagens/logotipo/118px_bgp.png" alt="Logo da BrawnGP">
+            </picture>
             <ul>
                 <li><a href="index.html">Início</a></li>
                 <li><a href="projetos.html">Projeto e afins</a></li>
                 <li><a href="cadastro.html">cadastros</a></li>
             </ul>
+            <div class="controles">
+                <button class="dark-mode-button" aria-label="modo-escuro"><span>☀️</span></button>
+                <button class="toggle" aria-label="toggle"><span>|||</span></button>
+            </div>
         </nav>
     </header>
     <!--Título principal da página e descrição curta-->
     <section class="principal">
         <h1>O Sim. Racing pode salvar vidas, seja voluntário.</h1>
-        <pre>
+        <p>
+            <pre>
             Nossa ONG se dedica no desenvolvimento de jovens pilotos
             sem condições financeiras.
-        </pre>
+            </pre>
+        </p>
         <!--Botão que leva para o cadastramento-->
         <button><a href="cadastro.html">Quero ser voluntário</a></button>
     </section>
     <!--Título secundário da página e desenvolvimento (Adicionar mais em breve)-->
     <section class="secundario">
         <h1>Quem somos, e qual nosso objetivo?</h1>
-        <pre>
+        <p>
+            <pre>
             Olá, se você caiu aqui de paraquedas, seja bem-vindo(a)
             nós da Brawn GP Sim. Racing, somos uma ONG dedicada ao
             desenvolvimento de jovens cujo sonho é de ingressar no
             automobilismo mesmo sem condições financeiras atráves
             do automobilismo virtual e de campeonatos amadores atráves
             de simuladores.
-        </pre>
+            </pre>
+        </p>
     </section>
     <!--Nota de rodapé. (Fixar um link para o meu repositório do github)-->
     <footer>
