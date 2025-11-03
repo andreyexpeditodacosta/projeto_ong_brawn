@@ -147,6 +147,20 @@ form > fieldset{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
 }
+.campos > input:focus{
+    outline: 0;
+}
+.campos.success input{
+    border-color: var(--cor_especia1);
+}
+.campos.error input{
+    border-color: rgb(185, 13, 13);
+}
+.campos .error{
+    font-size: 15px;
+    height: 10px;
+    color: rgb(185, 13, 13);
+}
 #formulario{
     margin: 0 auto;
 }
@@ -164,14 +178,14 @@ form > fieldset{
 .gp_style{
     color: var(--cor_especia1);
 }
-.erro{
+/*.erro{
     color: rgba(250, 81, 81, 0.808);
     font-size: 13px;
     font-weight: 600;
     display: block;
     margin-top: 5px;
     margin-bottom: 5px;
-}
+}*/
 #enviar{
     border: none;
     background-color: var(--cor_especia1);
