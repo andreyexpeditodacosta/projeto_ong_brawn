@@ -16,17 +16,22 @@
                 <source media="(min-width: 300px)" srcset="imagens/logotipo/235px_bgp.png">
                 <img id="logo" src="imagens/logotipo/118px_bgp.png" alt="Logo da BrawnGP">
             </picture>
-            <ul>
+            <!--<ul class="side_bar">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projeto e afins</a></li>
+                <li><a href="cadastro.html">cadastros</a></li>
+            </ul>-->
+            <ul class="nav-list">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="projetos.html">Projeto e afins</a></li>
                 <li><a href="cadastro.html">cadastros</a></li>
             </ul>
             <div class="controles">
                 <button class="dark-mode-button" aria-label="modo-escuro"><span>☀️</span></button>
-                <button class="burger" aria-label="toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <button class="mobile-menu">
+                    <span>|</span>
+                    <span>|</span>
+                    <span>|</span>
                 </button>
             </div>
         </nav>
@@ -53,7 +58,7 @@
         <form id="form" onsubmit="handleSubmit(event)" action="#">
             <fieldset>
                 <!--Dados sensíveis. Cuidados extras devem ser tomados-->
-                <legend>Superlicença</legend>
+                <legend>Dados pessoais</legend>
                 <div class="campos">
                     <label for="nome">Nome Completo</label>
                     <input type="text" id="nome" name="nome" >
@@ -118,6 +123,7 @@
         <p>© Brawn <span class="gp_style">GP</span> Sim. Racing. Todos os direitos reservados</p>
         <address>Rua José Carlos Pace 71 São Paulo - SP CEP: 00000-000</address>
     </footer>
+        <script src="nav_mobile.js"></script>
 </body>
 
 </html>
