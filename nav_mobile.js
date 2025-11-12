@@ -21,6 +21,7 @@ class MobileNavbar {
   handleClick() {
     this.navList.classList.toggle(this.activeClass);
     this.animateLinks();
+      this.mobileMenu.classList.toggle("active");     // anima o botão
   }
 
   addEvent() {

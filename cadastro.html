@@ -27,11 +27,11 @@
                 <li><a href="cadastro.html">cadastros</a></li>
             </ul>
             <div class="controles">
-                <button class="dark-mode-button" aria-label="modo-escuro"><span>☀️</span></button>
+                <button id="btn-dark-mode-toggle" aria-label="modo-escuro"><span>☀️</span></button>
                 <button class="mobile-menu">
-                    <span>|</span>
-                    <span>|</span>
-                    <span>|</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </div>
         </nav>
@@ -117,13 +117,25 @@
             <button id="enviar" type="submit">Enviar</button>
         </form>
     </section>
+    <section>
+        <article id="contatos">
+        <h3>Contatos</h3>
+        <p>
+            <a href="#">brawngpsr_ong@gmail.com</a>
+        </p>
+        <p>
+            <a href="#">Telefone: (11) 99999-9999</a>
+        </p>
+    </article>
+    </section>
     </main>
         <script src="index.js"></script>
+        <script src="nav_mobile.js"></script>
+        <script src="darkmode.js"></script>
     <footer>
         <p>© Brawn <span class="gp_style">GP</span> Sim. Racing. Todos os direitos reservados</p>
         <address>Rua José Carlos Pace 71 São Paulo - SP CEP: 00000-000</address>
     </footer>
-        <script src="nav_mobile.js"></script>
 </body>
 
 </html>
