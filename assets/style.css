@@ -285,7 +285,7 @@ legend{
         transition: 0.3s;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     body{
         overflow-x: hidden;
     }
